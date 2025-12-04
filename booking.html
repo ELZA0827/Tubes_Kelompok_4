@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Indonesia - Booking Trip</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #667eea !important;
+        }
+
+        .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #667eea !important;
+        }
+
+        .page-header {
+            padding: 120px 0 40px;
+            text-align: center;
+        }
+
+        .page-title {
+            color: white;
+            font-weight: 700;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+
+        .page-subtitle {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+        }
+
+        .booking-section {
+            padding: 40px 0 60px;
+        }
+
+        .booking-form-container {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form-header h2 {
+            color: #667eea;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .form-header p {
+            color: #666;
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-label i {
+            margin-right: 8px;
+            color: #667eea;
+        }
+
+        .form-control, .form-select {
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 12px 15px;
+            transition: border-color 0.3s;
+            font-size: 1rem;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .form-note {
+            background: #f0f4ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .form-note p {
+            margin: 0;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-plane"></i> Explore Indonesia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimoni.html">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title"><i class="fas fa-ticket-alt"></i> Booking Trip</h1>
+            <p class="page-subtitle">Pesan paket wisata impian Anda sekarang juga!</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <div class="booking-form-container">
+                <div class="form-header">
+                    <h2><i class="fas fa-suitcase-rolling"></i> Form Pemesanan Paket Wisata</h2>
+                    <p>Isi formulir di bawah ini dengan lengkap untuk memesan paket wisata Anda</p>
+                </div>
+
+                <form id="bookingForm">
+                    <!-- Nama Lengkap -->
+                    <div class="mb-4">
+                        <label for="nama" class="form-label">
+                            <i class="fas fa-user"></i> Nama Lengkap
+                        </label>
+                        <input 
+                            type="text" 
+                            class="form-control" 
+                            id="nama" 
+                            name="nama"
+                            placeholder="Masukkan nama lengkap Anda" 
+                            required
+                        >
+                    </div>
+
+                    <!-- Destinasi Tujuan -->
+                    <div class="mb-4">
+                        <label for="destinasi" class="form-label">
+                            <i class="fas fa-map-marked-alt"></i> Destinasi Tujuan
+                        </label>
+                        <select class="form-select" id="destinasi" name="destinasi" required>
+                            <option value="">Pilih Destinasi Tujuan</option>
+                            <option value="Bali">Bali - Pulau Dewata</option>
+                            <option value="Labuan Bajo">Labuan Bajo - Taman Nasional Komodo</option>
+                            <option value="Raja Ampat">Raja Ampat - Papua Barat</option>
+                            <option value="Bromo">Gunung Bromo - Jawa Timur</option>
+                            <option value="Danau Toba">Danau Toba - Sumatera Utara</option>
+                            <option value="Yogyakarta">Yogyakarta - Kota Budaya</option>
+                        </select>
+                    </div>
+
+                    <!-- Nomor WhatsApp -->
+                    <div class="mb-4">
+                        <label for="whatsapp" class="form-label">
+                            <i class="fab fa-whatsapp"></i> Nomor WhatsApp
+                        </label>
+                        <input 
+                            type="tel" 
+                            class="form-control" 
+                            id="whatsapp" 
+                            name="whatsapp"
+                            placeholder="Contoh: 081234567890" 
+                            pattern="[0-9]{10,13}"
+                            required
+                        >
+                        <small class="text-muted">Format: 08xxxxxxxxxx (10-13 digit)</small>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Kirim Pemesanan
+                    </button>
+
+                    <!-- Form Note -->
+                    <div class="form-note">
+                        <p>
+                            <i class="fas fa-info-circle"></i> 
+                            <strong>Catatan:</strong> Setelah mengirim formulir, tim kami akan menghubungi Anda 
+                            melalui WhatsApp dalam waktu 1x24 jam untuk konfirmasi dan detail lebih lanjut.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2024 Explore Indonesia. Jelajahi Keindahan Nusantara.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form Submission Handler
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Ambil nilai dari form
+            const nama = document.getElementById('nama').value;
+            const destinasi = document.getElementById('destinasi').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            
+            // Validasi form
+            if (!nama || !destinasi || !whatsapp) {
+                alert('Mohon lengkapi semua field yang diperlukan!');
+                return;
+            }
+            
+            // Validasi format nomor WhatsApp
+            const whatsappPattern = /^[0-9]{10,13}$/;
+            if (!whatsappPattern.test(whatsapp)) {
+                alert('Format nomor WhatsApp tidak valid! Gunakan format: 08xxxxxxxxxx (10-13 digit)');
+                return;
+            }
+            
+            // Tampilkan konfirmasi
+            const konfirmasi = confirm(Siap berlibur ke ${destinasi}? Tim kami akan menghubungi WA Anda segera.);
+            
+            if (konfirmasi) {
+                // Tampilkan pesan sukses
+                alert('Terima kasih! Pemesanan Anda telah diterima. Kami akan menghubungi Anda melalui WhatsApp dalam waktu 1x24 jam.');
+                
+                // Reset form
+                document.getElementById('bookingForm').reset();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Indonesia - Home</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #667eea !important;
+        }
+
+        .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #667eea !important;
+        }
+
+        .hero-section {
+            padding: 60px 0 40px;
+        }
+
+        .carousel-item {
+            height: 500px;
+            position: relative;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .carousel-caption {
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+            bottom: 40px;
+        }
+
+        .welcome-section {
+            background: white;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .welcome-section h2 {
+            color: #667eea;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .feature-box {
+            text-align: center;
+            padding: 20px;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-plane"></i> Explore Indonesia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimoni.html">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero-section">
+        <div class="container" style="padding-top: 80px;">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&h=500&fit=crop" alt="Bali">
+                        <div class="carousel-caption">
+                            <h2>Pulau Dewata - Bali</h2>
+                            <p>Surga tropis dengan pantai menawan dan budaya yang kaya</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.ibb.co.com/bMW4RbTt/Raja-Ampat.webp" alt="Raja Ampat">
+                        <div class="carousel-caption">
+                            <h2>Raja Ampat - Papua</h2>
+                            <p>Keindahan bawah laut terbaik di dunia</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.ibb.co.com/w2T4f2F/kemenparekraf-iklan-169.jpg" alt="Yogyakarta">
+                        <div class="carousel-caption">
+                            <h2>Yogyakarta</h2>
+                            <p>Kota budaya dengan sejuta cerita sejarah</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section>
+        <div class="container">
+            <div class="welcome-section">
+                <h2><i class="fas fa-globe-asia"></i> Selamat Datang di Explore Indonesia</h2>
+                <p>
+                    Jelajahi keindahan Indonesia bersama kami! Dari Sabang sampai Merauke, kami hadirkan 
+                    pengalaman wisata terbaik yang tak terlupakan. Nikmati pesona alam, budaya, dan 
+                    keramahan penduduk lokal di setiap destinasi pilihan kami.
+                </p>
+                <div class="features">
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="feature-title">Aman & Terpercaya</div>
+                        <p>Layanan wisata berlisensi resmi</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-user-friends"></i></div>
+                        <div class="feature-title">Guide Profesional</div>
+                        <p>Berpengalaman dan ramah</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-tags"></i></div>
+                        <div class="feature-title">Harga Terjangkau</div>
+                        <p>Paket wisata dengan harga bersahabat</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2024 Explore Indonesia. Jelajahi Keindahan Nusantara.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

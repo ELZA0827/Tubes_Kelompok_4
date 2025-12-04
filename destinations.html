@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Indonesia - Destinasi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #667eea !important;
+        }
+
+        .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #667eea !important;
+        }
+
+        .page-header {
+            padding: 120px 0 40px;
+            text-align: center;
+        }
+
+        .page-title {
+            color: white;
+            font-weight: 700;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+
+        .page-subtitle {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+        }
+
+        .destinations-section {
+            padding: 40px 0 60px;
+        }
+
+        .destination-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 30px;
+            height: 100%;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .destination-content {
+            padding: 25px;
+        }
+
+        .destination-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .destination-title i {
+            margin-right: 10px;
+        }
+
+        .destination-desc {
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        footer {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-plane"></i> Explore Indonesia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="destinations.html">Destinasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimoni.html">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title"><i class="fas fa-map-marked-alt"></i> Destinasi Populer</h1>
+            <p class="page-subtitle">Jelajahi tempat-tempat menakjubkan di Indonesia</p>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section class="destinations-section">
+        <div class="container">
+            <div class="row">
+                <!-- Destination 1: Bali -->
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&h=400&fit=crop" alt="Bali">
+                        <div class="destination-content">
+                            <h3 class="destination-title">
+                                <i class="fas fa-map-marker-alt"></i> Bali
+                            </h3>
+                            <p class="destination-desc">
+                                Pulau Dewata yang terkenal dengan keindahan pantainya, pura-pura megah, dan budaya yang kaya. 
+                                Nikmati sunset di Tanah Lot, jelajahi sawah terasering Tegalalang, dan rasakan spiritualitas 
+                                di Pura Besakih. Bali menawarkan kombinasi sempurna antara relaksasi pantai, petualangan alam, 
+                                dan pengalaman budaya yang mendalam dengan keramahtamahan penduduk lokalnya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 2: Labuan Bajo -->
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="https://i.ibb.co.com/5wRB7jS/labuan-bajo.jpg" alt="Labuan Bajo">
+                        <div class="destination-content">
+                            <h3 class="destination-title">
+                                <i class="fas fa-anchor"></i> Labuan Bajo
+                            </h3>
+                            <p class="destination-desc">
+                                Gerbang menuju Taman Nasional Komodo yang terkenal di seluruh dunia. Di sini Anda dapat 
+                                menikmati keindahan pulau-pulau eksotis dengan pantai berpasir putih dan air laut yang jernih. 
+                                Jangan lewatkan kesempatan untuk snorkeling di perairan yang kaya akan terumbu karang dan 
+                                bertemu langsung dengan komodo, hewan purba legendaris yang hanya ada di Indonesia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 3: Raja Ampat -->
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="https://i.ibb.co.com/bMW4RbTt/Raja-Ampat.webp" alt="Raja Ampat">
+                        <div class="destination-content">
+                            <h3 class="destination-title">
+                                <i class="fas fa-fish"></i> Raja Ampat
+                            </h3>
+                            <p class="destination-desc">
+                                Surga bawah laut terbaik di dunia dengan keanekaragaman hayati laut yang luar biasa. Raja Ampat 
+                                memiliki lebih dari 1.500 pulau kecil dan terumbu karang yang masih sangat terjaga. Diving dan 
+                                snorkeling di sini akan memberikan pengalaman tak terlupakan dengan ribuan spesies ikan tropis, 
+                                penyu, manta ray, dan formasi karang yang memukau di perairan yang jernih.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 4: Gunung Bromo -->
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=600&h=400&fit=crop" alt="Bromo">
+                        <div class="destination-content">
+                            <h3 class="destination-title">
+                                <i class="fas fa-mountain"></i> Gunung Bromo
+                            </h3>
+                            <p class="destination-desc">
+                                Gunung berapi aktif yang menawarkan pemandangan sunrise spektakuler dari ketinggian. Saksikan 
+                                matahari terbit di atas awan yang menyelimuti kawah aktif dengan lautan pasir yang luas. Suhu 
+                                dingin di pagi hari dan kabut tipis menciptakan suasana magis. Pengalaman mendaki dan menjelajahi 
+                                kawasan kaldera memberikan petualangan yang tak terlupakan bagi para pencinta alam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 5: Danau Toba -->
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="https://i.ibb.co.com/xKFWqNcQ/Danau-Toba.png" alt="Danau Toba">
+                        <div class="destination-content">
+                            <h3 class="destination-title">
+                                <i class="fas fa-water"></i> Danau Toba
+                            </h3>
+                            <p class="destination-desc">
+                                Danau vulkanik terbesar di Asia Tenggara yang terbentuk dari letusan gunung berapi super ribuan 
+                                tahun lalu. Di tengah danau terdapat Pulau Samosir yang menawarkan keindahan pegunungan yang sejuk. 
+                                Rasakan keramahan masyarakat Batak yang terkenal dengan musik dan budaya tradisionalnya. Tempat 
+                                sempurna untuk bersantai sambil menikmati udara pegunungan yang segar dan pemandangan danau.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 6: Yogyakarta -->
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="https://i.ibb.co.com/w2T4f2F/kemenparekraf-iklan-169.jpg" alt="Yogyakarta">
+                        <div class="destination-content">
+                            <h3 class="destination-title">
+                                <i class="fas fa-landmark"></i> Yogyakarta
+                            </h3>
+                            <p class="destination-desc">
+                                Kota budaya dengan sejuta cerita sejarah dan warisan dunia UNESCO. Jelajahi kemegahan Candi 
+                                Borobudur dan Prambanan, kunjungi Keraton Yogyakarta, dan nikmati kuliner legendaris seperti 
+                                gudeg. Yogyakarta juga terkenal dengan seni batik, kerajinan perak, dan pertunjukan seni tradisional 
+                                seperti wayang kulit. Kota ini menjadi pusat pendidikan dan kebudayaan Jawa yang kental.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2024 Explore Indonesia. Jelajahi Keindahan Nusantara.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

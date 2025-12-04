@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Indonesia - Testimoni</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #667eea !important;
+        }
+
+        .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #667eea !important;
+        }
+
+        .page-header {
+            padding: 120px 0 40px;
+            text-align: center;
+        }
+
+        .page-title {
+            color: white;
+            font-weight: 700;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+
+        .page-subtitle {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+        }
+
+        .testimonials-section {
+            padding: 40px 0 60px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .quote-icon {
+            font-size: 4rem;
+            color: #667eea;
+            opacity: 0.2;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin: 30px 0 20px;
+            text-align: justify;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: #667eea;
+            font-size: 1.2rem;
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .testimonial-location {
+            color: #888;
+            text-align: right;
+            font-size: 0.95rem;
+        }
+
+        .rating {
+            color: #ffc107;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: rgba(0,0,0,0.8);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-plane"></i> Explore Indonesia
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinasi</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="testimoni.html">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title"><i class="fas fa-comments"></i> Apa Kata Pelanggan</h1>
+            <p class="page-subtitle">Pengalaman nyata dari para wisatawan yang telah menjelajah bersama kami</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="row">
+                <!-- Testimonial 1 -->
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <div class="testimonial-content">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <blockquote class="testimonial-text">
+                                Pengalaman liburan yang luar biasa! Pelayanan sangat profesional dan destinasi 
+                                yang ditawarkan benar-benar memukau. Kami sekeluarga sangat puas dan pasti akan 
+                                menggunakan jasa ini lagi untuk liburan berikutnya. Guide yang menemani kami 
+                                sangat ramah dan berpengetahuan luas tentang tempat-tempat wisata yang kami 
+                                kunjungi. Semua sudah diatur dengan sempurna mulai dari transportasi, akomodasi, 
+                                hingga kuliner lokal yang lezat. Terima kasih Explore Indonesia!
+                            </blockquote>
+                            <p class="testimonial-author">— Sarah Wijaya</p>
+                            <p class="testimonial-location">Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <div class="testimonial-content">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <blockquote class="testimonial-text">
+                                Trip ke Raja Ampat bersama Explore Indonesia adalah keputusan terbaik tahun ini! 
+                                Semua sudah diatur dengan sempurna, guide ramah dan berpengalaman. Pemandangan 
+                                bawah lautnya sungguh spektakuler, terumbu karangnya masih sangat terjaga dan 
+                                ikan-ikan warna-warni berenang bebas di sekitar kami. Saya yang baru pertama kali 
+                                diving merasa sangat aman dengan instruktur yang sabar dan profesional. 
+                                Highly recommended untuk siapa saja yang ingin menikmati keindahan Indonesia!
+                            </blockquote>
+                            <p class="testimonial-author">— Budi Santoso</p>
+                            <p class="testimonial-location">Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2024 Explore Indonesia. Jelajahi Keindahan Nusantara.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
